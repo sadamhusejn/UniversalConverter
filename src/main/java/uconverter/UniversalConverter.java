@@ -8,8 +8,11 @@ import java.util.List;
 public class UniversalConverter {
     private final List<UnitConverter> converters = Arrays.asList(
             new CelsiusUnitConverter(),
-            new FahrenheitUnitConverter(),
-            new KelvinUnitConverter()
+            new MeterUnitConverter(),
+            new KelvinUnitConverter(),
+            new KilometerUnitConverter(),
+            new MeterUnitConverter()
+
     );
     private UnitConverter sourceConverter;
     private UnitConverter targetConverter;
